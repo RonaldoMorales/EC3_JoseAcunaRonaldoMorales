@@ -19,7 +19,7 @@ def scrape_categoria(
     """Navega desde el home hasta una categoria y extrae sus libros."""
     options = Options()
     options.add_argument("--headless=new")
-    options.add_argument("--window-size=1366,900")
+    options.add_argument("--window-size=1000,650")
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
